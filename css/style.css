@@ -1,0 +1,146 @@
+:root {
+    --primary-color: rgb(0, 74, 173);
+    --secondary-color: rgb(118, 167, 232);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Less than 600px */
+@media screen and (max-width: 600px) {
+    .body {
+        background-color: rgb(30, 30, 30);
+        margin: 0px;
+        /* scroll; */
+        display: block;
+        text-align: left;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .portrait {
+        float: none;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        transition: 1s;
+    }
+}
+
+/* Greater than 600px */
+@media screen and (min-width: 600px) {
+    .body {
+        background-color: rgb(30, 30, 30);
+        background-position: center;
+        background-size: 50%;
+        background-attachment: fixed;
+        /* scroll; */
+        background-repeat: no-repeat;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        /* margin: 16px; */
+        position: sticky;
+        top: 0;
+        text-align: left;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .portrait {
+        float: right;
+        width: 50%;
+        max-width: 100%;
+        margin: 0px;
+        text-align: center;
+        transition: 1s;
+    }
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+p {
+    color: black;
+    font-family: 'Verdana', sans-serif;
+    text-align: left;
+    font-size: 1em;
+}
+
+h1 {
+    color: white;
+    font-family: 'Verdana', sans-serif;
+    font-size: 5em;
+    font-weight: normal;
+    margin: 16px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Verdana', sans-serif;
+    font-size: 2em;
+    font-weight: lighter;
+    margin: 16px;
+}
+
+.menuitem {
+    color: white;
+    margin: 16px;
+    text-decoration: none;
+    font-family: 'Verdana', sans-serif;
+    position: relative;
+    transition: 1s;
+}
+
+.menuitem:hover {
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+.menuitemc {
+    color: white;
+    margin: 16px;
+    text-decoration: none;
+    font-family: 'Verdana', sans-serif;
+    position: relative;
+    transition: 1s;
+}
+
+.menuitemc:hover {
+    color: var(--secondary-color);
+    font-size: 1.6em;
+}
+
+#icon {
+    align-items: center;
+    margin: 2px;
+    vertical-align: middle;
+    transition: 1s;
+}
+
+#icon:hover {
+    transform: scale(1.4);
+}
+
+#homeIcon {
+    width: 30px;
+    height: 30px;
+    /* float: right; */
+    align-items: center;
+    margin: 8px;
+    vertical-align: middle;
+    transition: 1s;
+}
+
+#homeIcon:hover {
+    transform: scale(1.2);
+}
