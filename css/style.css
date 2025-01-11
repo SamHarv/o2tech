@@ -27,6 +27,9 @@
         width: 100%;
         text-align: center;
         transition: 1s;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
     }
 }
 
@@ -52,7 +55,10 @@
     }
 
     .portrait {
-        float: right;
+        /* float: right; */
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
         width: 50%;
         max-width: 100%;
         margin: 0px;
